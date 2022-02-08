@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Animais Fantásticos</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type='module' src="script.js" async defer></script>
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav class="menu" data-anime='menu'>
+        <button data-menu='menu' aria-expanded="false"
+         aria-controls='menu'>Menu</button><!--O aria-expanded indica para o leitor de tela q o menu não está expandido e o aria-controls indica oque o botão controla-->
+        <ul data-menu="list" id="menu">
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href='sobre.html'>sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal="abrir" href="login.html">Login➣</a></li>
+        </ul>
+      </nav>
+      
+      <section class="grid-section animais js-scroll" data-anime='scroll' id="animais">
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animal-list" data-tab="menu">
+          <li class="raposa"><img src="img/imagem1.jpg" alt="Raposa" /></li>
+          <li class="esquilo"><img src="img/imagem2.jpg" alt="Esquilo" /></li>
+          <li class="urso"><img src="img/imagem3.jpg" alt="Urso" /></li>
+          <li class="lobo"><img src="img/imagem4.jpg" alt="Lobo" /></li>
+          <li class="babuino"><img src="img/imagem5.jpg" alt="babuino" /></li>
+          <li class="leão"><img src="img/imagem6.jpg" alt="leão" /></li>
+        </ul>
+        <div class="animais-desc" data-tab="content">
+          <section data-anime='show-right'>
+            <h2>Raposa</h2>
+            <p>
+              Raposas são pequenos a médios mamíferos onívoros pertencentes a
+              vários gêneros da família Canidae. As raposas têm o crânio achatado,
+              orelhas triangulares verticais, focinho pontiagudo e ligeiramente
+              arrebitado e uma cauda longa e espessa.
+            </p>
+          </section>
+
+          <section data-anime='show-down'>
+            <h2>Esquilo</h2>
+            <p>
+              Os esquilos pertencem a uma grande família de mamíferos roedores, de
+              pequeno e médio porte, conhecida como Sciuridae. No Brasil, são
+              também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim,
+              quatipuru, agutipuru ou acutipuru. Na Galiza e em algumas zonas de
+              Portugal, também é conhecido por esquio.
+            </p>
+          </section>
+
+          <section data-anime='show-right'>
+            <h2>Urso</h2>
+            <p>
+              O urso-pardo (Ursus arctos) é um mamífero carnívoro da família dos
+              ursídeos. É o urso de mais ampla distribuição geográfica dentre
+              todos os membros vivos de sua família. É um dos maiores carnívoros
+              terrestres da atualidade, rivalizado em tamanho corporal apenas com
+              seu parente próximo, o urso polar, que é muito menos variável em
+              tamanho e maior devido a isso. Existem varias subespécies
+              reconhecidas, muitas das quais são bem conhecidas em sua área de
+              ocorrência.
+            </p>
+          </section>
+
+          <section data-anime='show-down'>
+            <h2>Lobo</h2>
+            <p>
+              O lobo é uma espécie de mamífero canídeo do gênero Canis, da família
+              dos cães e raposas. É um sobrevivente da Era do Gelo, originário do
+              Pleistoceno Superior, cerca de 300 mil anos atrás. Está dividido em
+              4 espécies: lobo-cinzento (Canis lupus), lobo-dourado (Canis
+              anthus), lobo-vermelho (Canis rufus) e lobo-etíope (Canis
+              simensis),[2] embora os cientistas atualmente debatam se o
+              lobo-etíope seria um verdadeiro lobo ou um membro da família dos
+              chacais-dourados. Dessas espécies, o lobo-cinzento é a maior delas e
+              também de todos os membros remanescentes selvagens da família
+              canidae.
+            </p>
+          </section>
+
+          <section data-anime='show-right'>
+            <h2>babuino</h2>
+            <p>
+              Babuíno (do francês babouin) é a designação genérica para
+              antropoides cercopitecídeos do gênero Papio e afins, caracterizados
+              pelo focinho pontudo, caninos grandes, bochechas volumosas e
+              calosidades nas nádegas. É um animal semi-quadrúpede da ordem dos
+              primatas que mede até 120 centímetros de comprimento. Vive na África
+              e seu habitat natural é nos campos abertos (savana, pastagens ou
+              terrenos rochosos).
+            </p>
+          </section>
+
+          <section data-anime='show-down'>
+            <h2>Leão</h2>
+            <p>
+              O leão [feminino: leoa] (nome científico: Panthera leo) é uma
+              espécie de mamífero carnívoro do gênero Panthera e da família
+              Felidae. A espécie é atualmente encontrada na África subsaariana e
+              na Ásia, com uma única população remanescente em perigo, no Parque
+              Nacional da Floresta de Gir, Gujarat, Índia. Foi extinto na África
+              do Norte e no Sudoeste Asiático em tempos históricos, e até o
+              Pleistoceno Superior, há cerca de 10 000 anos, era o mais difundido
+              grande mamífero terrestre depois dos humanos, sendo encontrado na
+              maior parte da África, em muito da Eurásia, da Europa Ocidental à
+              Índia, e na América, do Yukon ao México.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="grid-section faq" data-anime='scroll' id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-list" data-anime='accordion'>
+          <dt>Quantos anos vivem os animais?</dt>
+          <dd>
+            <p>
+              Raposas: Na natureza, a expectativa de vida típica de uma raposa é
+              de um a três anos, embora os indivíduos possam viver até dez anos.
+            </p>
+            <br />
+            <p>
+              Esquilos: Um esquilo-vermelho pode viver até 3 anos na natureza, e
+              alguns de 7 à 10 anos em cativeiro
+            </p>
+            <br />
+            <p>Ursos: Os ursos vivem de 20 à 30 anos na natureza.</p>
+            <br />
+            <p>
+              Lobos: O lobo macho pode viver até os 16 anos e a fêmea até os 14
+              anos.
+            </p>
+            <br />
+            <p>Babuino: O babuino pode viver de 35 à 45 anos, na natureza</p>
+            <br />
+            <p>
+              Leões: o leão pode viver de 8 à 10 anos, enquanto a leoa pode viver
+              de 10 à 15 anos, ambos na natureza.
+            </p>
+          </dd>
+
+          <dt>Como eles vivem?</dt>
+          <dd>
+            <p>
+              Raposas: Ao contrário de muitos canídeos, as raposas nem sempre são
+              animais de carga. Normalmente, eles vivem em pequenos grupos
+              familiares, mas alguns (como raposas-do-ártico) são solitários
+            </p>
+            <br />
+            <p>
+              Esquilos: Os esquilos são roedores que têm a cauda longa e peluda.
+              ... Os esquilos vivem em todos os continentes, exceto na Antártica e
+              na Oceania. Esquilos arborícolas fazem suas casas nas árvores.
+              Esquilos do solo vivem em buracos sob as pradarias, nos desertos e
+              nos campos
+            </p>
+            <br />
+            <p>
+              Ursos: Os ursos adultos costumam viver sozinhos, exceto durante a
+              época do acasalamento. A fêmea dá à luz de um a quatro filhotes de
+              cada vez. Quando nascem, os filhotes são pequenos, sem pelos e
+              indefesos. Eles mamam por cerca de dois meses, mas ficam junto de
+              suas mães por 18 meses ou mais.
+            </p>
+            <br />
+            <p>
+              Lobo: O lobo é um animal que vive em grupos, as alcateias. Em
+              ambiente natural, as alcateias são grupos familiares onde ocorre a
+              divisão de tarefas, que são lideradas pelos progenitores.
+              Geralmente, o macho reprodutor é responsável pela busca por
+              alimento, e a fêmea, pelo cuidado com as crias.
+            </p>
+            <br />
+            <p>
+              Babuino: Eles podem viver em ambientes variados, como florestas,
+              campos e montanhas rochosas. Passam a maior parte do tempo no solo,
+              mas dormem em locais altos, como árvores e penhascos. Babuínos no
+              Parque Nacional das Montanhas Simien, na Etiópia, África.
+            </p>
+            <br />
+            <p>
+              leões: A maior parte dos leões que hoje vive na natureza são
+              encontrados nas savanas da África e demais regiões semi-desérticas.
+              Ele já foi extinto de muitas áreas de florestas da Ásia e Europa.
+              ... A maior parte do tempo dos leões é destinada ao descanso, apenas
+              durante 5 horas do dia ocorrem as atividades de caça e em grupo
+            </p>
+          </dd>
+
+          <dt>Eles são Fantásticos?</dt>
+          <dd>
+            Obviamente que sim, cada um deles tem suas proprias caracteristicas
+            que os tornam espetaculares. como o leão usar sua juba como defesa
+            durante uma luta e ser o rei da selva, ou o esquilo armazenar comida
+            nas bochechas, o urso estocar comida para passar o inverno durante a
+            hibernação, os lobos escolherem um lider e serem leais ao seu lider, o
+            babuino ser considerado os reis das montanhas
+          </dd>
+
+          <dt>como proteger?</dt>
+          <dd>
+            a melhor forma de proteger esses animais é parar de destruir seus
+            habitats, parar de caça-los e deixa-los livres, muitas sub-especies
+            desses animais já foram exterminadas e entraram em extinção por conta
+            dos seres-humanos, que cada vez mais vem destruindo o habitat desses
+            animais e atrapalhando o ciclo da vida, você também pode doar para
+            causas dedicadas a proteger não só esses, como outros animais:
+
+            <a href="https://www.petlove.com.br/doacoes" target="_blank"
+              >petlove.com.br</a
+            >
+          </dd>
+        </dl>
+      </section>
+
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+          <!--animalApi.json está ocupando esse lugar-->
+        </div>
+      </section>
+
+
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa">
+          <img src="img/mapa.png" data-tooltip aria-label="endereço próximo ao estacionamento" />
+        </div>
+        <ul class="dados">
+          <li>jeffaodossantos0@gmail.com</li>
+          <li>+55 (11) 95359-5335</li>
+          <li>Poá, SP</li>
+          <li>Doe <span class="btc-preco">0</span>  Bitcoin para nos ajudar</li>
+          <li data-semana='1,2,3,4,5' data-horario="8, 18">Seg à Sex das 8 às 18</li>
+        </ul>
+      </section>
+
+      <footer class="copy">
+        <p>Todos os direitos reservados©</p>
+      </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="email" for='email' id='email'>
+          <label for="email">Senha</label>
+          <input type="password" for='senha' id='senha'>
+          <button type="submit">Entrar</button>
+        </form>
+
+      </div>
+    </section>
+  </body>
+</html>
