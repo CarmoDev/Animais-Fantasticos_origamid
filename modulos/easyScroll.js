@@ -17,4 +17,5 @@ export default function initEasyScroll() {
   linksInternos.forEach((link) => {
     link.addEventListener("click", scrollToSection);
   });
+  console.log('teste');
 }
