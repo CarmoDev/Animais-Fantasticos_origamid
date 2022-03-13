@@ -14,6 +14,8 @@ import initFetchBitcoin from "./modulos/fetch-bitcoin.js";
 const easyScroll = new EasyScroll('[data-menu="suave"] a[href^="#"]');
 easyScroll.init();
 
+'[data-anime="accordion"] dt'
+
 initAnimateScroll();
 
 initAccordion();

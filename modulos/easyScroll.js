@@ -24,9 +24,7 @@ export default class EasyScroll {
   }
 
   init() {
-    if (this.links.length) {
-      this.addLinkEvent();
-    }
+    this.addLinkEvent();
     return this;
   }
 }

@@ -1,12 +1,16 @@
-export default function initAccordion() {
-  const accordionList = document.querySelectorAll(
-    '[data-anime="accordion"] dt',
-  );
-  const activeClass = 'ativo';
+export default class Accordion {
+  constructor(list){
+    this.accordionList = document.querySelectorAll(list);
+    this.activeClass = 'ativo';
+  }
 
-  function activeAccordion() {
-    this.classList.toggle(activeClass);
+  activeAccordion() {
+    this.classList.toggle(this.activeClass);
     this.nextElementSibling.classList.toggle(activeClass);
+  }
+
+  init() {
+    
   }
 
   if (accordionList.length) {
