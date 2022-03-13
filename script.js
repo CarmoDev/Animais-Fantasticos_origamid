@@ -1,4 +1,4 @@
-import initEasyScroll from "./modulos/easyScroll.js";
+import EasyScroll from "./modulos/easyScroll.js";
 import initAnimateScroll from "./modulos/scroll-animation.js";
 import initAccordion from "./modulos/accordion.js";
 import initTabNav from "./modulos/initTab-nav.js";
@@ -11,7 +11,8 @@ import initDateObject from "./modulos/date-object.js";
 import initFetchAnimais from "./modulos/fetchAnimais.js";
 import initFetchBitcoin from "./modulos/fetch-bitcoin.js";
 
-initEasyScroll();
+const easyScroll = new EasyScroll('[data-menu="suave"] a[href^="#"]');
+easyScroll.init();
 
 initAnimateScroll();
 
