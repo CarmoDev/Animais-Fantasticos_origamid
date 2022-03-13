@@ -14,7 +14,6 @@ export default class EasyScroll {
     Event.preventDefault();
     const href = Event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
-
     section.scrollIntoView(this.options);
   }
 
@@ -25,8 +24,9 @@ export default class EasyScroll {
   }
 
   init() {
-    if(this.link)
+    if (this.links.length) {
       this.addLinkEvent();
-      return this;
+    }
+    return this;
   }
 }
