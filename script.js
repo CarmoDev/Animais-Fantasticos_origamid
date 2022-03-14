@@ -11,7 +11,7 @@ import initFetchAnimais from "./modulos/fetchAnimais.js";
 import initFetchBitcoin from "./modulos/fetch-bitcoin.js";
 import initAnimateScroll from "./modulos/scroll-animation.js";
 
-const easyScroll = new EasyScroll('[data-menu="suave"] a[href^="#"]');
+const easyScroll = new EasyScroll('[data-anime="menu"] a[href^="#"]');
 easyScroll.init();
 
 const accordion = new Accordion('[data-anime="accordion"] dt');

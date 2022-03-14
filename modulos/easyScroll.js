@@ -6,11 +6,11 @@ export default class EasyScroll {
     } else {
       this.options = options;
     }
-
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
   scrollToSection(Event) {
+    console.log(this);
     Event.preventDefault();
     const href = Event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
