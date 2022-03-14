@@ -1,24 +1,32 @@
-export default function initTabNav() {
-  const tabmenu = document.querySelectorAll('[data-tab="menu"] li');
-  const tabContent = document.querySelectorAll('[data-tab="content"] section');
-
-  tabContent[0].classList.add("ativo");
-
-  function activeTab(index) {
-    const show = tabContent[index].dataset.anime;
-
-    tabContent.forEach((section) => {
-      section.classList.remove("ativo", show);
-    });
-    tabContent[index].classList.add("ativo", show);
+export default class TabNav {
+  constructor(menu, content) {
+    this.tabmenu = document.querySelectorAll(menu);
+    this.tabContent = document.querySelectorAll(content);
+    this.activeClass = "ativo";
   }
 
-  if (tabmenu.length && tabContent.length) {
-    tabmenu.forEach((item, index) => {
-      item.addEventListener("click", () => {
-        activeTab(index);
-      });
+  // ativa a tab de acordo com o index da mesma
+  activeTab(index) {
+    const show = this.tabContent[index].dataset.anime;
+
+    this.tabContent.forEach((section) => {
+      section.classList.remove(this.activeClass, show);
     });
+    this.tabContent[index].classList.add(this.activeClass, show);
+  }
+
+  // adiciona os eventos nas tabs
+  addTabNavEvent() {
+    this.tabmenu.forEach((item, index) => {
+      item.addEventListener("click", () => this.activeTab(index));
+    });
+  }
+
+  init() {
+    if (this.tabmenu.length && this.tabContent.length) {
+      // ativar primeiro item
+      this.activeTab(0);
+      this.addTabNavEvent();
+    }
   }
 }
-initTabNav();
