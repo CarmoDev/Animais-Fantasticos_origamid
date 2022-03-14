@@ -2,7 +2,7 @@ import EasyScroll from "./modulos/easyScroll.js";
 import Accordion from "./modulos/accordion.js";
 import TabNav from "./modulos/initTab-nav.js";
 import initBackground from "./modulos/background.js";
-import initModal from "./modulos/modal.js";
+import Modal from "./modulos/modal.js";
 import initTooltip from "./modulos/tooltip.js";
 import initDropDownMenu from "./modulos/dropdown-menu.js";
 import initMenuMobile from "./modulos/menu-mobile.js";
@@ -20,9 +20,10 @@ accordion.init();
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabNav.init();
 
-initBackground();
+const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]')
+modal.init()
 
-initModal();
+initBackground();
 
 initTooltip();
 
