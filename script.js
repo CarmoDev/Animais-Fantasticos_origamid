@@ -1,6 +1,5 @@
 import EasyScroll from "./modulos/easyScroll.js";
-import initAnimateScroll from "./modulos/scroll-animation.js";
-import initAccordion from "./modulos/accordion.js";
+import Accordion from "./modulos/accordion.js";
 import initTabNav from "./modulos/initTab-nav.js";
 import initBackground from "./modulos/background.js";
 import initModal from "./modulos/modal.js";
@@ -10,15 +9,13 @@ import initMenuMobile from "./modulos/menu-mobile.js";
 import initDateObject from "./modulos/date-object.js";
 import initFetchAnimais from "./modulos/fetchAnimais.js";
 import initFetchBitcoin from "./modulos/fetch-bitcoin.js";
+import initAnimateScroll from "./modulos/scroll-animation.js";
 
 const easyScroll = new EasyScroll('[data-menu="suave"] a[href^="#"]');
 easyScroll.init();
 
-'[data-anime="accordion"] dt'
-
-initAnimateScroll();
-
-initAccordion();
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
 
 initTabNav();
 
@@ -37,3 +34,5 @@ initDateObject();
 initFetchAnimais();
 
 initFetchBitcoin();
+
+initAnimateScroll();
