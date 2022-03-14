@@ -1,6 +1,6 @@
 import EasyScroll from "./modulos/easyScroll.js";
 import Accordion from "./modulos/accordion.js";
-import initTabNav from "./modulos/initTab-nav.js";
+import TabNav from "./modulos/initTab-nav.js";
 import initBackground from "./modulos/background.js";
 import initModal from "./modulos/modal.js";
 import initTooltip from "./modulos/tooltip.js";
@@ -17,7 +17,8 @@ easyScroll.init();
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
-initTabNav();
+const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabNav.init();
 
 initBackground();
 
