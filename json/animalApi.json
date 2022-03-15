@@ -1,26 +1,26 @@
 [
     {
         "specie": "Raposa",
-        "total": 7200000
+        "total": 7203894
     },
     {
         "specie": "Esquilo",
-        "total": 600000
+        "total": 613479
     },
     {
         "specie": "Urso-Pardo",
-        "total": 200000
+        "total": 240923
     },
     {
         "specie": "Lobos",
-        "total": 6000
+        "total": 6579
     },
     {
         "specie": "Babuino",
-        "total": 15000
+        "total": 15482
     },
     {
         "specie": "Leão",
-        "total": 20000
+        "total": 27589
     }
 ]
