@@ -8,7 +8,7 @@ import initDropDownMenu from "./modulos/dropdown-menu.js";
 import initMenuMobile from "./modulos/menu-mobile.js";
 import initDateObject from "./modulos/date-object.js";
 import fetchAnimais from "./modulos/fetchAnimais.js";
-import initFetchBitcoin from "./modulos/fetch-bitcoin.js";
+import fetchBitcoin from "./modulos/fetch-bitcoin.js";
 import initAnimateScroll from "./modulos/scroll-animation.js";
 
 const easyScroll = new EasyScroll('[data-anime="menu"] a[href^="#"]');
@@ -41,8 +41,8 @@ initMenuMobile();
 
 initDateObject();
 
+initAnimateScroll();
+
 fetchAnimais('./json/animalApi.json', '.numeros-grid');
 
-initFetchBitcoin();
-
-initAnimateScroll();
+fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
