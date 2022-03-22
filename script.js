@@ -9,7 +9,7 @@ import initMenuMobile from "./modulos/menu-mobile.js";
 import initDateObject from "./modulos/date-object.js";
 import fetchAnimais from "./modulos/fetchAnimais.js";
 import fetchBitcoin from "./modulos/fetch-bitcoin.js";
-import initAnimateScroll from "./modulos/scroll-animation.js";
+import ScrollAnima from "./modulos/scroll-anima.js";
 
 const easyScroll = new EasyScroll('[data-anime="menu"] a[href^="#"]');
 easyScroll.init();
@@ -41,7 +41,8 @@ initMenuMobile();
 
 initDateObject();
 
-initAnimateScroll();
+const scrollanima = new ScrollAnima('[data-anime="scroll"]');
+scrollanima.init();
 
 fetchAnimais('./json/animalApi.json', '.numeros-grid');
 
