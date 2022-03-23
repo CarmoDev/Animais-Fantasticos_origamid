@@ -4,7 +4,7 @@ import TabNav from "./modulos/initTab-nav.js";
 import initBackground from "./modulos/background.js";
 import Modal from "./modulos/modal.js";
 import Tooltip from "./modulos/tooltip.js";
-import initDropDownMenu from "./modulos/dropdown-menu.js";
+import DropdownMenu from "./modulos/dropdown-menu.js";
 import initDateObject from "./modulos/date-object.js";
 import fetchAnimais from "./modulos/fetchAnimais.js";
 import fetchBitcoin from "./modulos/fetch-bitcoin.js";
@@ -35,7 +35,8 @@ initBackground();
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
-initDropDownMenu();
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
 
 const menuMobile = new MenuMobile('[data-menu="menu"]', '[data-menu="list"]');
 menuMobile.init();
