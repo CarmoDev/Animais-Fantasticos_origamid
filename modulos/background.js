@@ -1,19 +1,19 @@
+import TabNav from "./initTab-nav.js";
+
 export default function initBackground() {
   const tabmenu = document.querySelectorAll('[data-tab="menu"] li > img');
 
-  function activeAnimal(index) {
-    tabmenu.forEach((animal) => {
-      animal.classList.remove("ativo");
-    });
-    tabmenu[index].classList.add("ativo");
-  }
+  const tabNav = new TabNav(
+    '[data-tab="menu"] li > img',
+    '[data-tab="menu"] li > img',
+  );
+  tabNav.init();
 
-  tabmenu.forEach((item, index) => {
+  tabmenu.forEach((item) => {
     item.addEventListener("click", () => {
       const animal = item.getAttribute('alt');
-      activeAnimal(index);
       if (item.classList.contains("ativo")) {
-        document.body.style.backgroundImage = `url("img/background/${animal}.jpg")`;
+        document.body.style.backgroundImage = `url("img/background/${animal}.webp")`;
         document.body.style.color = "white";
         document.body.style.webkitTextStrokeWidth = "0.2px";
         document.body.style.webkitTextStrokeColor = "#000";
